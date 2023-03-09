@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <h1 class="main-div">SPLITTER</h1>
+    <div class="container">
+      <div class="calculator">
+        <div class="bill">
+          <label for="bill">Bill</label>
+          <input id="bill" placeholder="$" type="text" />
+          <p id="err1"></p>
+        </div>
+        <div class="percent-buttons">
+          <label for="btn">Select Tip %</label>
+          <div class="percents">
+            <button id="btn1">5%</button>
+            <button id="btn2">10%</button>
+            <button id="btn3">15%</button>
+            <button id="btn4">25%</button>
+            <button id="btn5">50%</button>
+            <button id="btn6">CUSTOM</button>
+            <input class="custom-input" type="text" placeholder="Custom">
+          </div>
+        </div>
+        <div class="number-people">
+          <label for="people">Number of People</label>
+          <input class="fontAwesome" placeholder="0" id="people" type="text" />
+          <p id="err2"></p>
+        </div>
+        
+      </div>
+      <div class="result">
+       <div class="tip-amount">
+        <p>Tip Amount <br> <span>/ person</span></p>
+        <h1 id="tip-total">$0.00</h1>
+       </div>
+       <div class="total">
+        <p>Total <br> <span>/ person</span></p>
+        <h1 id="total-value">$0.00</h1>
+       </div>
+       <button id="submit-btn"><span id="span">RESET</span></button>
+      </div>
+    </div>
+  </body>
+</html>
